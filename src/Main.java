@@ -13,8 +13,8 @@ public class Main {
 
 
 
-        System.out.println(RemoveDuplicatesFromSortedArray.removeDuplicates(Arrays.stream(args).mapToInt(Integer::parseInt).toArray()));
-
+        //System.out.println(RemoveDuplicatesFromSortedArray.removeDuplicates(Arrays.stream(args).mapToInt(Integer::parseInt).toArray()));
+        System.out.println(RemoveElement.removeElement(Arrays.stream(args).mapToInt(Integer::parseInt).toArray(),2));
     }
 }
 
