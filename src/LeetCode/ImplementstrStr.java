@@ -24,12 +24,16 @@ public class ImplementstrStr {
     public static int strStr(String haystack, String needle) {
         if (needle.length() == 0 )
             return 0;
-        int i = 0;
-        int j = 0;
-        if (haystack.indexOf(needle) >= 0 )
-            return haystack.indexOf(needle);
-        else
-        return -1;
+        for (int i =0 ; ;i++){
+
+            // notice until Line 3 check if it is match
+
+            for (int j = 0 ; ; j++){
+                if (j == needle.length())return i;
+                if (i+j == haystack.length())return -1;
+                if (needle.charAt(j)!=haystack.charAt(i+j)) break;
+            }
+        }
     }
 
 
