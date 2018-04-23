@@ -28,29 +28,32 @@ public class SearchInsertPosition {
      * @param target
      * @return
      */
-    public static int searchInsert(int num[], int target) {
+    public static int searchInsertV1(int num[], int target) {
 
         int temp;
-        int i;
-        for (i = 0; i < num.length; i++) {
+        int i = 0;
+        while (i < num.length) {
 
             if (target == num[i]) {
                 return i;
             }
             if (target < num[i]) {
-                    temp  =  num[i];
-                    num[i++] = target;
-                for (; i < num.length+1 ; i++) {
-                    num[i] = temp;
-                    
 
-                }
                 return i;
             }
 
-
+            i++;
         }
         return i;
+    }
+
+
+
+
+    public static int searchInsertV2(int num[], int target){
+
+
+
     }
 
 }

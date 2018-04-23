@@ -14,7 +14,7 @@ public class Main {
 
 
         //System.out.println(RemoveDuplicatesFromSortedArray.removeDuplicates(Arrays.stream(args).mapToInt(Integer::parseInt).toArray()));
-        System.out.println(SearchInsertPosition.searchInsert(Arrays.stream(args).mapToInt(Integer::parseInt).toArray(),2));
+        System.out.println(SearchInsertPosition.searchInsert(Arrays.stream(args).mapToInt(Integer::parseInt).toArray(),0));
     }
 }
 
