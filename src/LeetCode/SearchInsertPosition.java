@@ -46,12 +46,19 @@ public class SearchInsertPosition {
         }
         return i;
     }
-
+    //先確
 
 
 
     public static int searchInsertV2(int num[], int target){
-
+        int low = 0, high = num.length-1;
+        while(low<=high){
+            int mid = (low+high)/2;
+            if(num[mid] == target) return mid;
+            else if(num[mid] > target) high = mid-1;
+            else low = mid+1;
+        }
+        return low;
 
 
     }
