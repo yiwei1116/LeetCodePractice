@@ -14,7 +14,7 @@ public class Main {
 
 
         //System.out.println(RemoveDuplicatesFromSortedArray.removeDuplicates(Arrays.stream(args).mapToInt(Integer::parseInt).toArray()));
-        System.out.println(ＭaxSubArray.maxSubArray2(Arrays.stream(args).mapToInt(Integer::parseInt).toArray()));
+        System.out.println(Arrays.toString(PlusOne.plusOne(Arrays.stream(args).mapToInt(Integer::parseInt).toArray())));
     }
 }
 
