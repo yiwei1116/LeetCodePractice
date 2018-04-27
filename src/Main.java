@@ -14,7 +14,7 @@ public class Main {
 
 
         //System.out.println(RemoveDuplicatesFromSortedArray.removeDuplicates(Arrays.stream(args).mapToInt(Integer::parseInt).toArray()));
-        System.out.println(Sqrt.mySqrtV2(Integer.parseInt(args[0])));
+        System.out.println(ClimbingStairs.climbStairsV2(4));
     }
 }
 
