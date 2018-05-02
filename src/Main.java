@@ -14,7 +14,7 @@ public class Main {
 
 
         //System.out.println(RemoveDuplicatesFromSortedArray.removeDuplicates(Arrays.stream(args).mapToInt(Integer::parseInt).toArray()));
-        System.out.println(ClimbingStairs.climbStairsV2(4));
+        System.out.println(MergeSortedArray.merge(Arrays.stream(args).mapToInt(Integer::parseInt).toArray(),3,Arrays.stream(args).mapToInt(Integer::parseInt).toArray(),3));
     }
 }
 
