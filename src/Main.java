@@ -11,10 +11,11 @@ public class Main {
     public static void main(String[] args) {
 
 
-
+        int[] num1 = {1,2,3,0,0,0};
+        int[] num2 = {2,5,6};
 
         //System.out.println(RemoveDuplicatesFromSortedArray.removeDuplicates(Arrays.stream(args).mapToInt(Integer::parseInt).toArray()));
-        System.out.println(MergeSortedArray.merge(Arrays.stream(args).mapToInt(Integer::parseInt).toArray(),3,Arrays.stream(args).mapToInt(Integer::parseInt).toArray(),3));
+
     }
 }
 
