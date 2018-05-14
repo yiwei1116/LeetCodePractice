@@ -10,6 +10,7 @@ import java.util.Stack;
 
 
 public class MaximumDepthofBinaryTree {
+
     public class TreeNode {
         int val;
         TreeNode left;
@@ -38,8 +39,8 @@ public class MaximumDepthofBinaryTree {
      */
       public static int maxDepthV2(TreeNode root) {
 
-          Stack<TreeNode> stack = new Stack<>();
-          Stack<Integer> value = new Stack<>();
+          Stack <TreeNode> stack = new Stack<>();
+          Stack <Integer> value = new Stack<>();
           stack.push(root);
           value.push(1);
           int max = 0;
