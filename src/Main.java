@@ -15,7 +15,7 @@ public class Main {
         int[] num2 = {2,5,6};
 
         //System.out.println(RemoveDuplicatesFromSortedArray.removeDuplicates(Arrays.stream(args).mapToInt(Integer::parseInt).toArray()));
-        System.out.println(BestTimeToBuyAndSellStock.maxProfile(Arrays.stream(args).mapToInt(Integer::parseInt).toArray()));
+        System.out.println(ValidPalindrome.isPalindrome("A man, a plan, a canal: Panama"));
     }
 }
 
