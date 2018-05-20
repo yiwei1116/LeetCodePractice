@@ -19,7 +19,7 @@ public class SingleValue {
 
         int result = 0;
         for (int i = 0 ; i < num.length ; i++){
-        /* XOR  will return 1 only on two different bit
+        /* XOR  wi cvll return 1 only on two different bit
           So if two numbers are the same, XOR will return 0
            Finally only one left
 
