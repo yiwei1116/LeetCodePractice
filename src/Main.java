@@ -15,7 +15,7 @@ public class Main {
         int[] num2 = {2,5,6};
 
         //System.out.println(RemoveDuplicatesFromSortedArray.removeDuplicates(Arrays.stream(args).mapToInt(Integer::parseInt).toArray()));
-        System.out.println(Character.toChars(1+64));
+        System.out.println(ExcelSheetColumnNumber.titleToNumber(args[0]));
     }
 }
 

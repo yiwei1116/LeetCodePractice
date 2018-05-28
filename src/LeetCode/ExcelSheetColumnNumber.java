@@ -15,15 +15,28 @@ public class ExcelSheetColumnNumber {
             transferTable.put(Character.toChars(i+64),i);
 
         }
+        int num = 0 ;
+        int init = 0;
 
-        while ()
+        if (s.length()==1)
+            return (int)transferTable.get(s.charAt(init));
+        else {
+
+        while (init+1 < s.length()) {
+            num = (int) transferTable.get(s.charAt(init));
+            num = 26 * num ;
+            init++;
+
+        }
+            num = num +  (int) transferTable.get(s.charAt(init));
+        }
 
 
 
 
 
 
-        return 0;
+        return num;
     }
 
 
