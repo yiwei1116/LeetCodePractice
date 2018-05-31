@@ -6,37 +6,23 @@ import java.util.HashMap;
  * Created by yiwei on 2018/5/28.
  */
 public class ExcelSheetColumnNumber {
+
     public static int titleToNumber(String s){
 
-        HashMap transferTable = new HashMap();
+        int result = 0;
 
-        for (int i = 1; i < 27 ; i++)
-        {
-            transferTable.put(Character.toChars(i+64),i);
+        for (int i = 0 ; i < s.length(); i++){
 
-        }
-        int num = 0 ;
-        int init = 0;
-
-        if (s.length()==1)
-            return (int)transferTable.get(s.charAt(init));
-        else {
-
-        while (init+1 < s.length()) {
-            num = (int) transferTable.get(s.charAt(init));
-            num = 26 * num ;
-            init++;
+            result = result * 26 + s.charAt(i) - 'A' + 1 ;
 
         }
-            num = num +  (int) transferTable.get(s.charAt(init));
-        }
+
+
+        return result;
 
 
 
 
-
-
-        return num;
     }
 
 
