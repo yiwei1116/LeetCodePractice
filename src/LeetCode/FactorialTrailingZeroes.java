@@ -29,7 +29,7 @@ public class FactorialTrailingZeroes {
 
 
     }
-
+        // slow
     public static int trailingZeroesV2(int n){
 
         if ( n < 5  )return 0;
@@ -53,6 +53,14 @@ public class FactorialTrailingZeroes {
 
 
         return count;
+
+    }
+    public static int trailingZeroesV3(int n){
+
+
+
+        return n == 0 ? 0 :  n / 5 + trailingZeroesV3(n/5);
+
 
     }
 }
