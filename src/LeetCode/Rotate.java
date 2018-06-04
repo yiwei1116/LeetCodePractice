@@ -3,7 +3,7 @@ package LeetCode;
 public class Rotate {
 
 
-    public void rotate(int[] nums, int k ){
+    public static void rotate(int[] nums, int k ){
 
         int[] temp = new int[nums.length];
 
@@ -13,7 +13,7 @@ public class Rotate {
 
         }
 
-
+            nums =temp;
 
 
     }
