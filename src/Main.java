@@ -7,18 +7,11 @@ public class Main {
 
 
     public static void main(String[] args) {
-        String St = "Mr  Danny     ";
-        char[] Str = St.toCharArray();
-        int[] num1 = {1,2,3,4,5,6};
-        int[] num2 = {2,5,6};
-        System.out.println("/=/=/=/= TESTING /=/=/=/=");
-        LinkedListStack.LinkListStack myStack = new LinkedListStack.LinkListStack(9);
-        myStack.push(5);
-        myStack.push(4);
-        myStack.push(3);
-        myStack.push(2);
-        myStack.pop();
-        myStack.printStack();
+        Encapsulation obj = new Encapsulation();
+        obj.setAge(10);
+        obj.setName("Danny");
+        System.out.println("Geek's name: " + obj.getName());
+        System.out.println("Geek's age: " + obj.getAge());
 
 
 

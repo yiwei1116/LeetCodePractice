@@ -1,5 +1,6 @@
 package LeetCode;
 
+import java.util.ArrayList;
 import java.util.NoSuchElementException;
 
 public class MyQueue {
@@ -7,7 +8,7 @@ public class MyQueue {
 
         private int data;
         private QueueNode next;
-
+        private ArrayList<Object> arrayList = new ArrayList<Object>();
         public QueueNode(int data){
             this.data = data;
         }
